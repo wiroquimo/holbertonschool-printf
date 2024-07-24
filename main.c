@@ -9,14 +9,15 @@
  */
 int main(void)
 {
-    int len;
-    int len2;
+ 
+    _printf("Let's try to printf a simple sentence.\n");
+    printf("Let's try to printf a simple sentence.\n");
 
-    len = _printf("Let's try to printf a simple sentence.\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
+    _printf("%c", '\0');
+    printf("%c", '\0');
 
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
+    printf("%d", _printf("%c", '\0'));
+    printf("%d", printf("%c", '\0'));
 
     return (0);
 }

@@ -26,6 +26,8 @@ int _printf(const char *format, ...)
 	va_start(arg_list, format);
 
 	printed_chars = recording_error(format, f_list, arg_list);
+
 	va_end(arg_list);
+	
 	return (printed_chars);
 }
