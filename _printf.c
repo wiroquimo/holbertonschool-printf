@@ -30,6 +30,6 @@ int _printf(const char *format, ...)
 	printed_chars = recording_error(format, f_list, arg_list);
 
 	va_end(arg_list);
-	
+
 	return (printed_chars);
 }
