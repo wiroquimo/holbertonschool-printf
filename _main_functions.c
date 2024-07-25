@@ -42,3 +42,17 @@ int print_percent(__attribute__((unused))va_list list)
 	_write_char('%');
 	return (1);
 }
+
+/**
+ * print_integer - Print numbers
+ * @list: list of numbers
+ * Return: Will returns the amount of characters printed
+ */
+
+int print_integer(va_list list)
+{
+	int length;
+
+	length = print_number(list);
+	return (length);
+}
